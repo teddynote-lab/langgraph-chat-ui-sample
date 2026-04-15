@@ -10,5 +10,8 @@
     "reflection": "./graphs/reflection.py:graph",
     "storm_research": "./graphs/storm/graph.py:graph"
   },
+  "auth": {
+    "path": "./src/security/auth.py:auth"
+  },
   "env": ".env"
 }

@@ -20,4 +20,5 @@ dependencies = [
     "langchain-anthropic>=0.3.0",
     "langchain-tavily>=0.1.0",
     "arxiv>=2.1.0",
+    "pyjwt>=2.8.0",
 ]
