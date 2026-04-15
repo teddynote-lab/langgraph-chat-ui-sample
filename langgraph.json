@@ -1,0 +1,14 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "deep_research": "./graphs/deep_research.py:graph",
+    "chatbot": "./graphs/chatbot.py:graph",
+    "react_agent": "./graphs/react_agent.py:graph",
+    "supervisor": "./graphs/supervisor.py:graph",
+    "hitl_agent": "./graphs/hitl_agent.py:graph",
+    "map_reduce": "./graphs/map_reduce.py:graph",
+    "reflection": "./graphs/reflection.py:graph",
+    "storm_research": "./graphs/storm/graph.py:graph"
+  },
+  "env": ".env"
+}

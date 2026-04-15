@@ -1,0 +1,23 @@
+[project]
+name = "sample-graphs"
+version = "0.1.0"
+description = "Sample LangGraph servers for langgraph-chat-ui demo"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain[openai]>=1.2.7",
+    "langchain-aws>=1.2.1",
+    "langchain-community>=0.4.1",
+    "langchain-upstage>=0.7.5",
+    "langgraph-api>=0.7.9",
+    "langgraph-cli>=0.4.12",
+    "playwright>=1.57.0",
+    "python-dotenv>=1.2.1",
+    "deepagents>=0.3.8",
+    "nest-asyncio>=1.6.0",
+    "tavily>=1.1.0",
+    "boto3>=1.42.34",
+    "langchain-anthropic>=0.3.0",
+    "langchain-tavily>=0.1.0",
+    "arxiv>=2.1.0",
+]
