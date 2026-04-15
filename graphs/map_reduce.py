@@ -1,14 +1,15 @@
 """5. Map-Reduce — 동적 병렬 실행
 
-토폴로지: START → planner → [researcher × N] → synthesizer → END
-Send() API로 동적으로 병렬 노드를 생성하여 각 서브토픽을 병렬 연구 후 종합.
+토폴로지: START → planner → [researcher × N] → synthesizer → END Send() API로 동적으로 병렬 노드를 생성하여 각 서브토픽을 병렬 연구 후 종합.
 """
 
 from __future__ import annotations
 
 import operator
 import json
-from typing import Annotated, TypedDict
+from typing import Annotated, List, TypedDict
+from pydantic import Field
+from typing_extensions import NotRequired, Required
 
 from langchain_core.messages import HumanMessage, AIMessage
 from langgraph.graph import StateGraph, START, END
@@ -21,6 +22,8 @@ class OverallState(TypedDict):
     messages: Annotated[list, operator.add]
     research_topics: list[str]
     research_results: Annotated[list, operator.add]
+
+    #test_files: Annotated[List[str], Field(json_schema_extra={"x-field-display": "required"})]
 
 
 class ResearcherInput(TypedDict):
